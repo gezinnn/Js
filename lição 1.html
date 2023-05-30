@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Escolha um numero e veja a imagem</title>
+    <script>
+        function exibirImagem() {
+            var numero = prompt("Digite um número (1, 2, 3 ou 4) para escolher a imagem:");
+
+            var imagem = document.getElementById("imagem");
+
+            switch (numero) {
+                case "1":
+                    imagem.src = "https://upload.wikimedia.org/wikipedia/pt/thumb/6/6e/Zor%C3%A3o.png/220px-Zor%C3%A3o.png";
+                    break;
+                case "2":
+                    imagem.src = "https://pbs.twimg.com/media/E7Gt0MEWQAA16m1?format=jpg&name=small";
+                    break;
+                case "3":
+                    imagem.src = "https://www.animeexplained.com/wp-content/uploads/2023/01/asta-zetten.webp";
+                    break;
+                case "4":
+                    imagem.src = "https://i0.wp.com/metagalaxia.com.br/wp-content/uploads/2022/05/luffy-one-piece.webp?resize=1024%2C576&ssl=1";
+                    break;
+                default:
+                    alert("Número inválido!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Escolha um numero e veja a imagem</h1>
+    <button onclick="exibirImagem()">Exibir imagem</button>
+    <br>
+    <img id="imagem" src="" alt="Imagem">
+</body>
+</html>

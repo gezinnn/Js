@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+
+    <script>
+        function imagens() {
+    var numero = parseInt(prompt("Digite um número de 1 a 4:"));
+ 
+        if (numero === 1) {
+            document.getElementById("imagem").src = "https://images.wallpapersden.com/image/download/satoru-gojo-art_bGtobmuUmZqaraWkpJRmbmdlrWZnZWU.jpg";
+        } else if (numero === 2) {
+            document.getElementById("imagem").src = "https://somoskudasai.com/wp-content/uploads/2020/05/portada_roronoa-zoro-one-piece.jpg";
+        } else if (numero === 3) {
+            document.getElementById("imagem").src = "https://i.pinimg.com/originals/f2/0e/fc/f20efc5a89499bd95f8f6afd24ae1fa1.jpg";
+        } else if (numero === 4) {
+            document.getElementById("imagem").src = "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/08/Yoriichi_Tsugikuni_%28Anime%29.png/revision/latest/scale-to-width-down/1000?cb=20230411022113";
+        } else {
+            alert("Número inválido. Por favor, digite um número de 1 a 4.");
+        }
+    }
+    
+    </script>
+
+        
+        <style>
+
+            div {
+                margin: auto;
+                height: 390px;
+                width:  450px;
+                background-color: aqua;
+
+            }
+
+            img {
+
+                margin: auto;
+                height: 390px;
+                height: 390px;
+            }
+        </style>
+        
+        </head>
+<body>
+    <h1>Personagens que eu gosto</h1>
+    <hr>
+    <button onclick="imagens()">Clique Aqui e Veja uma Imagem</button>
+    <br>
+    <img id="imagem" alt="imagem">
+</body>
+    
+</html>

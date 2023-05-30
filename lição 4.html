@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo de troca de imagem</title>
+    <script>
+        function trocarImagem() {
+            var imagem = document.getElementById("imagem");
+            if (imagem.src.endsWith("imagem1.jpg")) {
+                imagem.src = "https://i0.wp.com/metagalaxia.com.br/wp-content/uploads/2022/05/luffy-one-piece.webp?resize=1024%2C576&ssl=1";
+            } else {
+                imagem.src = "https://movies-b26f.kxcdn.com/wp-content/uploads/2021/03/black-clover-finale-asta-1262524-1-770x470.jpeg";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Exemplo de troca de imagem</h1>
+    <button onclick="trocarImagem()">Trocar Imagem</button>
+    <br>
+    <img id="imagem" src="imagem1.jpg" alt="Imagem">
+</body>
+</html>

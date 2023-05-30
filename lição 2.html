@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Escolha uma cor</title>
+    <style>
+        #texto {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function colorirTexto() {
+            var cor = prompt("Escolha uma cor para o texto:\n1 - Azul\n2 - Amarelo\n3 - Verde\n4 - Vermelho");
+
+            var texto = document.getElementById("texto");
+
+            switch (cor) {
+                case "1":
+                    texto.style.color = "blue";
+                    break;
+                case "2":
+                    texto.style.color = "yellow";
+                    break;
+                case "3":
+                    texto.style.color = "green";
+                    break;
+                case "4":
+                    texto.style.color = "red";
+                    break;
+                default:
+                    alert("Opção inválida!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Escolha uma cor</h1>
+    <button onclick="colorirTexto()">Escolher cor do texto</button>
+    <br>
+    <p id="texto">Cor escolhida</p>
+</body>
+</html>
